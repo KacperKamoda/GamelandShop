@@ -1,0 +1,29 @@
+﻿@page "/"
+@using GamelandShop.Web.Data
+@using GamelandShop.Web.Components.Shared
+
+<PageTitle>GAMELAND – Strona główna</PageTitle>
+
+<div class="container">
+    <h2>Najpopularniejsze gry</h2>
+    <div class="products">
+        @foreach (var game in popularGames)
+        {
+            <GameCard GameItem="game" />
+        }
+    </div>
+</div>
+
+@code {
+    private List<Game> popularGames = new();
+
+    protected override void OnInitialized()
+    {
+        popularGames = new List<Game>
+        {
+            new Game { Id = 1, Title = "Cyberpunk 2077", Description = "Odkryj futurystyczny świat Night City. Gra RPG akcji od CD Projekt RED.", Price = 129.99m, ImageUrl = "https://cyberpunklibrarian.com/infopump/images/33.jpg" },
+            new Game { Id = 2, Title = "Wiedźmin 3: Dziki Gon", Description = "Przeżyj epicką przygodę jako Geralt z Rivii. Gra roku 2015!", Price = 89.99m, ImageUrl = "https://www.giantbomb.com/a/uploads/original/20/201266/3536200-8148212612-EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S2_1200x1600-53a8fb2c0201cd8aea410f2a049aba3f.jpg" },
+            new Game { Id = 3, Title = "FIFA 25", Description = "Najnowsza odsłona kultowej serii piłkarskiej. Zagraj ze znajomymi!", Price = 219.99m, ImageUrl = "https://image.api.playstation.com/vulcan/ap/rnd/202503/2520/af8bae73ff3c4e13aaa4b030dbe113689588cca5164ab5a7.png"}
+        };
+    }
+}

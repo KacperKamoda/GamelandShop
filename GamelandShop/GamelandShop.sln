@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamelandShop.Web", "GamelandShop.Web\GamelandShop.Web\GamelandShop.Web.csproj", "{A092BDA4-8BED-483D-AC9D-8C51680B6A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamelandShop.Web.Client", "GamelandShop.Web\GamelandShop.Web.Client\GamelandShop.Web.Client.csproj", "{87E3DFB7-011D-4FDA-9DD4-35A9A142424A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A092BDA4-8BED-483D-AC9D-8C51680B6A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A092BDA4-8BED-483D-AC9D-8C51680B6A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A092BDA4-8BED-483D-AC9D-8C51680B6A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A092BDA4-8BED-483D-AC9D-8C51680B6A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E3DFB7-011D-4FDA-9DD4-35A9A142424A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E3DFB7-011D-4FDA-9DD4-35A9A142424A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E3DFB7-011D-4FDA-9DD4-35A9A142424A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E3DFB7-011D-4FDA-9DD4-35A9A142424A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

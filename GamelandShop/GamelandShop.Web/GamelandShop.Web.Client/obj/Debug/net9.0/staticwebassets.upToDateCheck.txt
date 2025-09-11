@@ -1,0 +1,4 @@
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+C:\Users\kacpe\Desktop\Data\GamelandShop\GamelandShop.Web\GamelandShop.Web.Client\wwwroot\appsettings.Development.json
+C:\Users\kacpe\Desktop\Data\GamelandShop\GamelandShop.Web\GamelandShop.Web.Client\wwwroot\appsettings.json

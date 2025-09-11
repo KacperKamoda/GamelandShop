@@ -1,0 +1,14 @@
+﻿  @using GamelandShop.Web.Data
+
+<div class="product">
+    <img src="@GameItem.ImageUrl" alt="Okładka gry @GameItem.Title">
+    <h3>@GameItem.Title</h3>
+    <p>@GameItem.Description</p>
+    <div class="price">@GameItem.Price.ToString("C", new System.Globalization.CultureInfo("pl-PL"))</div>
+    <button>Kup teraz</button>
+</div>
+
+@code {
+    [Parameter]
+    public Game GameItem { get; set; } = new();
+}
