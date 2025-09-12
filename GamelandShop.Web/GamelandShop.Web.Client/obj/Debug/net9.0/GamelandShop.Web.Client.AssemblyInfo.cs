@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GamelandShop.Web.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b2980391a2c4698fa82ffe0615c3681c775c118")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6c9ac57a913723465a3b474895d4c7d27c9fee6")]
 [assembly: System.Reflection.AssemblyProductAttribute("GamelandShop.Web.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GamelandShop.Web.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
