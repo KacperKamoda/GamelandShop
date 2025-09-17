@@ -1,20 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GamelandShop</title>
-    <base href="/" />
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="GamelandShop.Web.Client.styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMELAND – Sklep z grami</title>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">Roading...</div>
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+
+    <header>
+        <h1>GAMELAND</h1>
+        <p>Twój sklep z grami – najnowsze tytuły i promocje!</p>
+    </header>
+
+    <nav>
+        <a href="#">Strona główna</a>
+        <a href="#">Gry PC</a>
+        <a href="#">Gry Konsolowe</a>
+        <a href="#">Gry Planszowe</a>
+        <a href="#">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <h2>Najpopularniejsze gry</h2>
+        <div class="products">
+            <!-- Produkt 1 -->
+            <div class="product">
+                <img src="https://cyberpunklibrarian.com/infopump/images/33.jpg" alt="Okładka gry Cyberpunk 2077">
+                <h3>Cyberpunk 2077</h3>
+                <p>Odkryj futurystyczny świat Night City. Gra RPG akcji od CD Projekt RED.</p>
+                <div class="price">129,99 zł</div>
+                <button>Kup teraz</button>
+            </div>
+
+            <!-- Produkt 2 -->
+            <div class="product">
+                <img src="https://www.giantbomb.com/a/uploads/original/20/201266/3536200-8148212612-EGS_TheWitcher3WildHuntCompleteEdition_CDPROJEKTRED_S2_1200x1600-53a8fb2c0201cd8aea410f2a049aba3f.jpg" alt="Okładka gry The Witcher 3">
+                <h3>Wiedźmin 3: Dziki Gon</h3>
+                <p>Przeżyj epicką przygodę jako Geralt z Rivii. Gra roku 2015!</p>
+                <div class="price">89,99 zł</div>
+                <button>Kup teraz</button>
+            </div>
+
+            <!-- Produkt 3 -->
+            <div class="product">
+                <img src="https://cdn.gracza.pl/i_gp/h/22/411986421.jpg" alt="Okładka gry EA Sports FC 24"> 
+                <h3>EA Sports FC 24</h3>
+                <p>Najnowsza odsłona kultowej serii piłkarskiej. Zagraj ze znajomymi!</p>
+                <div class="price">219,99 zł</div>
+                <button>Kup teraz</button>
+            </div>
+        </div>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+
+    <footer>
+        &copy; 2025 GAMELAND – sklep z grami. Wszelkie prawa zastrzeżone. Kacper Kamoda 106422 Łódź
+    </footer>
+
 </body>
 </html>
