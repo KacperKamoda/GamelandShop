@@ -1,1 +1,0 @@
-C:\Users\kacpe\Desktop\Data\GamelandShop\GamelandShop.Web\GamelandShop.Web.Client\obj\Debug\net9.0\staticwebassets.build.json
