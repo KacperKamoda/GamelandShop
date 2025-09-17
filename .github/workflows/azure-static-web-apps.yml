@@ -25,6 +25,23 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
+      - name: Clean and Build
+        run: |
+          cd GamelandShop.Web/GamelandShop.Web.Client
+          dotnet clean
+          dotnet publish -c Release -o bin/publish
+
+      - name: Debug - List build output
+        run: |
+          echo "=== ZAWARTOŚĆ PUBLISH FOLDERU ==="
+          ls -la GamelandShop.Web/GamelandShop.Web.Client/bin/Release/net9.0/publish/wwwroot/
+          echo "=== CZY INDEX.HTML ISTNIEJE? ==="
+          find . -name "index.html" -type f | head -5
+          echo "=== CZY BLAZOR.WEBASSEMBLY.JS ISTNIEJE? ==="
+          find . -name "blazor.webassembly.js" -type f | head -5
+          echo "=== STRUKTURA FRAMEWORK ==="
+          ls -la GamelandShop.Web/GamelandShop.Web.Client/bin/Release/net9.0/publish/wwwroot/_framework/ | head -10
+
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -33,14 +50,9 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "GamelandShop.Web/GamelandShop.Web.Client"
-          output_location: "wwwroot"  # Teraz to zadziała!
+          output_location: "bin/Release/net9.0/publish/wwwroot"
           app_build_command: "dotnet publish -c Release -o bin/publish"
           skip_api_build: true
-
-      - name: Debug - Verify build output
-        run: |
-          echo "Checking if index.html exists:"
-          find . -name "index.html" -type f | head -5
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
